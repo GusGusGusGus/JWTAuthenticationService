@@ -27,6 +27,7 @@ namespace JWTAuthenticationService
 
                 WriteLine( claims.FirstOrDefault(x => x.Type.Equals(ClaimTypes.Name)).Value );
                 WriteLine(claims.FirstOrDefault(x => x.Type.Equals(ClaimTypes.Email)).Value);
+                Read();
             }
         }
 
